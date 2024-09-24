@@ -1,0 +1,118 @@
+@media only screen and (max-width: 1024px) and (min-width: 600px) {
+  body {
+    font-size: 15px;
+    overflow-x: hidden;
+  }
+  .sub-heading {
+    font-size: 15px;
+  }
+  /* nav */
+  nav {
+    height: 95px;
+  }
+  .nav-crocus {
+    padding: 35px 0px 0px 35px;
+    font-size: 25px;
+    line-height: 20px;
+  }
+  .nav-tech {
+    font-size: 11px;
+  }
+  .nav-works {
+    font-size: 20px;
+    margin: 0px 70px 0px 0px;
+  }
+  .ham-menu {
+    right: 0.6vw;
+  }
+  label[for="ham-menu"] {
+    top: 37px;
+  }
+  .nav-right {
+    padding: 40px 35px 0px 0px;
+  }
+  section#top {
+    min-height: 85vh;
+  }
+  .menu-items {
+    font-size: 40px;
+    line-height: 0.7em;
+  }
+
+  /* landing */
+  .home-title {
+    font-size: 57px;
+    line-height: 70px;
+    margin-top: 16vh;
+  }
+
+  /* services */
+  .service-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  .carousel-img {
+    margin-bottom: 50px;
+  }
+
+  /* mission */
+  .mission-div h2 {
+    font-size: 40px;
+  }
+
+  /* footer */
+  .footer-div-top h1 {
+    font-size: 65px;
+    line-height: 80px;
+  }
+
+  /* contact */
+  .contact-left h1 {
+    font-size: 40px;
+    line-height: 1.4;
+  }
+
+  /* works */
+  h1.heading.large {
+    font-size: 4rem !important;
+  }
+  h1.heading {
+    font-size: 22px !important;
+  }
+  .works-card-content {
+    padding: 40px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .home-title {
+    margin-top: 10vh;
+  }
+}
+
+@media only screen and (max-width: 1025px) and (min-width: 600px) {
+  section#top {
+    min-height: 95vh;
+  }
+  .home-title {
+    margin-top: 30vh;
+  }
+  .slick-slide.slick-active.slick-center.slick-current
+    .carousel-div
+    .carousel-img {
+    height: 75vh;
+  }
+  .carousel-div .carousel-img {
+    height: 60vh;
+  }
+  .mission-div {
+    padding: 75vh 0 0 10vw;
+  }
+  .works-card {
+    height: 50vh !important;
+  }
+  .footer-div-top h1 {
+    font-size: 60px;
+  }
+}

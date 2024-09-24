@@ -1,0 +1,164 @@
+/* ------------ HOME ------------ */
+
+section#top {
+  min-height: 90vh;
+}
+
+.home-title {
+  font-family: "graphik-light";
+  font-size: 78px;
+  line-height: 100px;
+  display: table;
+  margin: auto;
+  margin-top: 20vh;
+}
+
+.link-div {
+  margin-top: 10vh;
+  /* text-align: center; */
+}
+
+#services {
+  /* margin-top: 120px; */
+  /* margin-bottom: 100px; */
+  min-height: 104vh;
+}
+
+/* CONTACT PAGE ----------------------------------- */
+.contact-spacing {
+  padding: 15vh 0 0 0;
+}
+
+.contact-left h1 {
+  font-size: 60px;
+  line-height: 1.5;
+}
+
+/* right contact */
+.contact-right h1 {
+  padding: 0 8px;
+  /* font-size: 40px; */
+}
+.input-field {
+  position: relative;
+  line-height: 44px;
+  padding-top: 20px;
+}
+.form-label {
+  position: absolute;
+  padding: 0 8px;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  color: #d3d3d3;
+  transition: 0.2s all;
+  cursor: text;
+}
+.input-field input,
+.input-field textarea {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 0 2px 0 2px;
+  margin: 13px 0 0px 0;
+  border-bottom: 2px solid #d3d3d3;
+  box-shadow: none;
+  color: #111;
+}
+.input-field input:invalid,
+.input-field textarea:invalid {
+  outline: 0;
+}
+.input-field input:focus,
+.input-field input:valid,
+.input-field textarea:focus,
+.input-field textarea:valid {
+  border-color: #111;
+  background-color: #ffffff00 !important;
+}
+.input-field input:focus ~ .form-label,
+.input-field input:valid ~ .form-label,
+.input-field input:not(:placeholder-shown):invalid ~ .form-label,
+.input-field textarea:focus ~ .form-label,
+.input-field textarea:valid ~ .form-label,
+.input-field textarea:not(:placeholder-shown):invalid ~ .form-label
+{
+  font-size: 14px;
+  top: 5px;
+  color: #111;
+}
+
+.socials {
+  padding-top: 100px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-end; */
+}
+.socials .contact-icon {
+  padding: 15px;
+}
+.contact-right {
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-end;
+}
+.contact-right .btn-cpt {
+  background-color: #111;
+  padding: 15px;
+  color: #eee;
+  border-radius: 5px;
+}
+.contact-right .btn-cpt:hover {
+  background-color: #333;
+}
+
+/* SUB-WORKS PAGE -----------------------------------  */
+
+.works-top-left,
+.works-top-right {
+  white-space: pre-line;
+  vertical-align: bottom;
+}
+
+.works-top-left {
+  padding-right: 16%;
+}
+
+.works-top-left .heading {
+  font-size: 3.75rem;
+  /* line-height: 1.1em; */
+}
+
+.works-p {
+  color: #878a8f;
+  margin-bottom: 18px;
+}
+
+.works-top-right {
+  margin-top: 55px;
+}
+
+.subworks-img {
+  border: 1px #bbbbbb61 solid;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+/* 404 PAGE -----------------------------------  */
+
+.notFound {
+  text-align: center;
+  margin-top: 40vh;
+}
+
+.notFound h1 {
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "graphik-reg";
+}
+
+.notFound .link-button {
+  font-weight: bold;
+}

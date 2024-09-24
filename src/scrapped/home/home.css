@@ -1,0 +1,129 @@
+/* index.css */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* app.css */
+
+.home-development,
+.home-designing,
+.home-marketing {
+  padding: 0px 30px;
+  height: 33.3vh;
+  /* transition: height 1s; */
+}
+
+.home-development {
+  background-color: #e9e8f3;
+}
+
+.home-designing {
+  background-color: #f3e8f3;
+}
+
+.home-marketing {
+  background-color: #e9e8f3;
+}
+
+#home-animate-text1,
+#home-animate-text2,
+#home-animate-text3 {
+  margin: 0;
+  padding-top: 13vh;
+  font-size: 50px;
+  transition: font-size 1s, padding-top 1s, color 1s;
+}
+
+#home-animate-text2 {
+  text-align: right;
+}
+
+/* hover: font change */
+.home-development:hover #home-animate-text1,
+.home-designing:hover #home-animate-text2,
+.home-marketing:hover #home-animate-text3 {
+  font-size: 200px;
+  padding-top: 0vh;
+  color: rgba(0, 0, 0, 0.04);
+  transition: font-size 2s, padding-top 2s, color 1s;
+}
+
+.home-development:hover,
+.home-designing:hover,
+.home-marketing:hover {
+  position: relative;
+  z-index: 3;
+  transition: z-index 1s;
+}
+
+#overlay {
+  cursor: pointer;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: rgba(255, 0, 0, 0.747); */
+  background-color: rgba(0, 0, 0, 0.89);
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 2s linear;
+}
+
+.home-development:hover ~ #overlay,
+.home-designing:hover ~ #overlay,
+.home-marketing:hover ~ #overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.home-img {
+  height: 33.3vh;
+  /* z-index: 5; */
+  position: absolute;
+  width: 50vw;
+  object-fit: cover;
+  max-width: 100vw !important;
+}
+
+.home-img.develop {
+  top: 0;
+  right: 0;
+}
+
+.home-img.design {
+  top: 33.4vh;
+  left: 0;
+}
+
+.home-designing:hover > .design {
+  top: 0 !important;
+}
+
+.home-img.market {
+  bottom: 0;
+  right: 0;
+}
+
+.home-img {
+  /* -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0))); */
+  mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.home-img.design {
+  /* -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0))); */
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}

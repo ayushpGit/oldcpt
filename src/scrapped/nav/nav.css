@@ -1,0 +1,63 @@
+.nav-cpt {
+  padding: 100px 5px 20px 5px;
+  border-radius: 50px;
+  background-color: yellowgreen;
+  text-align: center;
+  /* margin: auto; */
+  width: 100px;
+  font-weight: 800;
+  font-size: 20px;
+  position: absolute;
+  left: 47%;
+  top: -108px;
+  z-index: 10;
+}
+
+/* .nav-a {
+  color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+  position: absolute;
+  top: 10px;
+  left: 48.8vw;
+  z-index: -1;
+  transition: left 0.1s, top 0.1s "z-index" 1000s ease-in-out;
+  transition-delay: 1000s;
+} */
+
+.nav-a {
+  color: rgba(0, 0, 0);
+  text-decoration: none;
+  position: absolute;
+  top: 1.5%;
+  left: 49.1%;
+  font-weight: 700;
+  transition: left 1s, top 1s ease-in-out;
+  transition-delay: 1.5s;
+  z-index: 9;
+}
+
+.nav-a:hover {
+  color: red !important;
+}
+
+.nav-cpt:hover ~ .nav-a.cpt, .nav-a.cpt:hover {
+  left: 44vw;
+  top: 40px;
+  transition: left 0.1s ease-in-out;
+}
+.nav-cpt:hover ~ .nav-a.cpd, .nav-a.cpd:hover {
+  top: 80px;
+  transition: top 0.1s ease-in-out;
+}
+.nav-cpt:hover ~ .nav-a.cpm, .nav-a.cpm:hover {
+  left: 54vw;
+  top: 40px;
+  transition: left 0.1s ease-in-out;
+}
+.nav-cpt:hover ~ .nav-a.cpt,
+.nav-cpt:hover ~ .nav-a.cpd,
+.nav-cpt:hover ~ .nav-a.cpm {
+  /* z-index: 1; */
+  color: black;
+}/*  */
+
